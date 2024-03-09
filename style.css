@@ -1,143 +1,109 @@
-/* Alap formázás */
-* {
-    box-sizing: border-box;
-    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    body{
+        background-color: black;
+        opacity: 0.9;
+        margin: 0;
+        
+        color: rgb(255, 245, 238);
+    }
 
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #F7F7F7, #C3A1FF);
-}
 
-/* Fejléc formázása */
-header {
-    background-color: #C3A1FF;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
+    /* Az egesz Header Alakitasa */
+    .header {
+        position: fixed;
+        display: flex;
+        font-family: helvetica;
+        font-size: 22px;
+        justify-content: space-between;
+        padding-right: 50px;
+        align-items: center;
+        width: 98%;
+        height: 69px;
+        background-color: black;
+        border-bottom   : 1px solid seashell;    
+    }
 
-/* Navigáció formázása */
-nav {
-    background-color: #B08FFF;
-    color: #fff;
-    padding: 10px;
-}
+    /* Logo beallitasa */
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+    .logo {
+    opacity: 0.5;
+    padding-left: 10px;
+    }
 
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
+    /* Csak a menu Alakitasa */
+    .menu a{
+        color: rgb(255, 245, 238);
+        padding-left: 10px;
+    }
 
-nav a {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
+    .menu a:hover{
+        color: rgb(255, 184, 134);
+    }
 
-/* Tartalom terület formázása */
-section {
-    padding: 20px;
-    text-align: center;
-}
 
-/* Munka bemutató stílusok */
-.work-container {
+    /* Kozep */
+
+    .kozep {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 69px;
+        margin:0px 20px 0px 20px;
+        height: 700px;
+        background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*ddp3py*_ga*NTYyNzE5NDU4Mi4xNzA3OTQ5NTM4*_ga_3LRZM6TM9L*MTcwOTk3NTkxNy41Ni4xLjE3MDk5Nzk2NjUuMC4wLjA.);
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .elvalaszto {
+        width: 100%;
+        height: 130px;
+        display: grid;
+        align-content: stretch;
+        align-items: center;
+        background-color: black;
+        
+    }
+
+    .elvalaszto h2, h4 {
+        text-align: center;
+    }
+
+/* Az also KV kepek  */
+.also {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border-radius: 20px;
-    background-color: hsl(0, 0%, 97%);
+    flex-direction: column;
+    margin-left: 200px;
+    width: 1000px;
+    
 }
 
-.work-item {
-    text-align: center;
-    margin: 20px;
-    padding: 15px;
-    border: 1px solid #B08FFF;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    transition: transform 0.3s ease;
-    z-index: 1;
-}
-
-.work-item:hover {
-    transform: scale(1.10);
-    box-shadow: 5px 5px 10px 2px rgba(75, 74, 74, 0.8);
-}
-
-.work-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.work-item p {
-    margin-top: 10px;
-    color: #555;
-}
-
-footer {
-    background: linear-gradient(to top, rgba(195, 161, 255, 0.5), rgba(195, 161, 255, 0.5));
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Linkek formázása */
-a {
-    color: #7546A6;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.menu {
-    position: relative;
-    top: 0;
-    left: 0;
-    background-color: #5c3a96;
-    width: 100%;
-    height: 2rem;
+.image-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
 
-.menu ul {
-    list-style-type: none;
-    padding: 0;
+.image-wrapper {
+    text-align: center;
+}
+
+.also img {
+    width: 300px;
+    height: 200px;
+}
+
+.also h2,h4 {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
     margin: 0;
-    text-align: center;
-    display: grid;
-    grid-auto-flow: column;
 }
 
-.menu li {
-    margin: 20px;
+.also h2 {
+    margin-top: 20px;
 }
 
-.menu a {
-    text-decoration: none;
-    color: rgb(189, 156, 225);
-    font-weight: bold;
-    display: flex;
-}
+.also h4 {
 
-.menu a:hover {
-    transition: transform 0.5s ease;
-    transform: scale(1.50);
+    margin-bottom: 20px;
 }
